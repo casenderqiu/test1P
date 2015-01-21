@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/hrmsv3_mlearning_app/!svn/ver/2119/trunk/iOS/trunk/MLPlayer/iphone/Classes/Public/Network/MKNetworkKit
+END
+MKNetworkKit.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/hrmsv3_mlearning_app/!svn/ver/2119/trunk/iOS/trunk/MLPlayer/iphone/Classes/Public/Network/MKNetworkKit/MKNetworkKit.h
+END
+MKNetworkEngine.m
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/hrmsv3_mlearning_app/!svn/ver/2119/trunk/iOS/trunk/MLPlayer/iphone/Classes/Public/Network/MKNetworkKit/MKNetworkEngine.m
+END
+MKNetworkOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/hrmsv3_mlearning_app/!svn/ver/2119/trunk/iOS/trunk/MLPlayer/iphone/Classes/Public/Network/MKNetworkKit/MKNetworkOperation.h
+END
+MKNetworkEngine.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/hrmsv3_mlearning_app/!svn/ver/2119/trunk/iOS/trunk/MLPlayer/iphone/Classes/Public/Network/MKNetworkKit/MKNetworkEngine.h
+END
+MKNetworkOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/hrmsv3_mlearning_app/!svn/ver/2119/trunk/iOS/trunk/MLPlayer/iphone/Classes/Public/Network/MKNetworkKit/MKNetworkOperation.m
+END

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "TestLoginControl.h"
 @interface AppDelegate ()
 
 @end
@@ -16,10 +16,34 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, UI_IOS_WINDOW_WIDTH, UI_IOS_WINDOW_HEIGHT)];
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+    {
+        //设置tabbar选中时图片图片和文字颜色
+        self.window.tintColor = UIColorMakeRGB(241, 67, 52);
+        [[UIApplication sharedApplication] setStatusBarHidden:NO];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+    }
+    else
+    {
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
+    }
+    
+    [UIApplication sharedApplication].applicationSupportsShakeToEdit = YES;
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    TestLoginControl *loginVC = [[TestLoginControl alloc] init];
+    _navigationController = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    
+//    loginVC.navigationController.navigationBarHidden = YES;
+    if ([_window respondsToSelector:@selector(setRootViewController:)]) {
+        [self.window setRootViewController:_navigationController];
+    } else {
+        [self.window addSubview:_navigationController.view];
+    }
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
